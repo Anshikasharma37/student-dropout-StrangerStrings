@@ -47,7 +47,7 @@ student-dropout-StrangerStrings/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Install Dependencies
 
@@ -158,4 +158,4 @@ To run training and exploration on Google Colab:
 
 ---
 
-*Built as part of an college event.*
+*Built as part of a college event.*
