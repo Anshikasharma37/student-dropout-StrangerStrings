@@ -154,4 +154,4 @@ To run training and exploration on Google Colab:
 
 ---
 
-*Built as part of a student dropout prediction challenge.*
+*Built as part of an college event.*
