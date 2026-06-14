@@ -1,9 +1,13 @@
 # 🎓 Student Dropout Prediction System
 
+[![Live Demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://studentdropoutsystem.streamlit.app/)
+
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=flat-square&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red?style=flat-square&logo=streamlit)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-orange?style=flat-square)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2%2B-F7931E?style=flat-square&logo=scikit-learn)
+
+> 🚀 **[Click here to try the live app →](https://studentdropoutsystem.streamlit.app/)**
 
 A machine learning system that predicts whether a student is at risk of dropping out, based on academic performance, personal background, and economic context.
 
