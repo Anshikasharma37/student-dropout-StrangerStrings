@@ -193,14 +193,14 @@ with st.sidebar:
     st.markdown("<div class='section-header'>📚 Academic Performance</div>", unsafe_allow_html=True)
 
     grade1 = st.slider(
-        "Avg Grade — 1st Semester",
+        "Avg Grade — 1st Semester (0–20)",
         min_value=0.0, max_value=20.0, value=12.0, step=0.5,
-        help="Grade out of 20 (Portuguese grading scale)",
+        help="Portuguese grading scale (0–20). Note: This is NOT the Indian 10-point CGPA scale.",
     )
     grade2 = st.slider(
-        "Avg Grade — 2nd Semester",
+        "Avg Grade — 2nd Semester (0–20)",
         min_value=0.0, max_value=20.0, value=12.0, step=0.5,
-        help="Grade out of 20 (Portuguese grading scale)",
+        help="Portuguese grading scale (0–20). Note: This is NOT the Indian 10-point CGPA scale.",
     )
 
     st.markdown("<hr class='custom-divider'>", unsafe_allow_html=True)
@@ -268,10 +268,25 @@ st.markdown("""
 <h1 style='font-size:2rem; font-weight:700; margin-bottom:4px;'>
     Student Dropout Risk Predictor
 </h1>
-<p style='color:#64748b; font-size:0.95rem; margin-bottom:24px;'>
+<p style='color:#64748b; font-size:0.95rem; margin-bottom:12px;'>
     Enter student details in the sidebar to predict dropout probability using a
     trained <strong>XGBoost</strong> model with engineered features and SHAP explanations.
 </p>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div style='background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.25);
+            border-radius: 10px; padding: 12px 16px; margin-bottom: 24px;'>
+    <span style='font-size:0.82rem; color:#94a3b8;'>
+        <strong style='color:#a5b4fc;'>&#9432; Dataset Context</strong> &nbsp;&mdash;&nbsp;
+        This model is trained on data from a <strong style='color:#e2e8f0;'>Portuguese university
+        (UCI Student Dropout Dataset)</strong>. Grades follow the
+        <strong style='color:#e2e8f0;'>Portuguese 0&ndash;20 scale</strong> (not Indian 0&ndash;10 CGPA),
+        GDP is in <strong style='color:#e2e8f0;'>USD</strong>, and economic indicators reflect
+        European conditions. Predictions are for demonstration purposes and may not
+        directly apply to Indian institutions.
+    </span>
+</div>
 """, unsafe_allow_html=True)
 
 
